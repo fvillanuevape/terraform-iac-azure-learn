@@ -16,8 +16,8 @@ provider "azurerm" {
 
 # Primer resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-terraform-learn-dev"
-  location = "eastus2"
+  name     = var.azure_vm_size
+  location = var.azure_location
   tags = {
     "ambiente" = "dev"
   }
