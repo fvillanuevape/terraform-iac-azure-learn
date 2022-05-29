@@ -16,7 +16,7 @@ provider "azurerm" {
 
 # Primer resource group
 resource "azurerm_resource_group" "rg" {
-  name     = var.azure_vm_size
+  name     = var.azurerm_resource_group
   location = var.azure_location
   tags = {
     "ambiente" = "dev"
